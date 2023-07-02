@@ -1,0 +1,130 @@
+button:active{
+    transform: scale(.8);
+    transition: 100ms;
+}
+.display{
+    display: none;
+}
+header nav a:hover{
+    background: linear-gradient(45deg,rgb(250, 135, 250), lightblue, lightgreen, lightyellow);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+header nav a:active{
+    transform: scale(.8);
+    transition: 100ms;
+}
+
+footer a:active{
+    color: rgb(0, 102, 255);
+}
+.links a:active{
+    transform: scale(.8);
+    transition: 100ms;
+    filter: brightness(.8);
+}
+@media(min-width:1024px){
+
+
+.imgs{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 10vh;
+}
+
+.imgs .img1{
+    animation: mouse 1s alternate infinite;
+    height: 25px;
+}
+.imgs .img2{
+    animation: mouse 1s alternate infinite;
+    position: relative;
+    bottom: 10px;
+    height: 15px;
+}
+@keyframes mouse{
+    0%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+.imgs2{
+    position: relative;
+    top: 10vh;
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+.imgs2 .img1{
+    animation: mouse 2s alternate infinite;
+    height: 25px;
+}
+.imgs2 .img2{
+    position: relative;
+    bottom: 10px;
+    animation: mouse 2s alternate infinite;
+    height: 15px;
+}
+.imgs3{
+    position: relative;
+    top:10vh;
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+.imgs3 .img1{
+    animation: mouse 2s alternate infinite;
+    height: 25px;
+}
+.imgs3 .img2{
+    position: relative;
+    bottom: 10px;
+    animation: mouse 2s alternate infinite;
+    height: 15px;
+}
+.imgs4{
+    position: relative;
+    top: 19vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.imgs4 .img1{
+    animation: mouse 2s alternate infinite;
+    height: 26px;
+}
+.imgs4 .img2{
+    position: relative;
+    bottom: 12px;
+    animation: mouse 2s alternate infinite;
+    height: 16px;
+}
+.imgs5{
+    position: static;
+    margin: 50px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.imgs5 .img1{
+    animation: mouse 2s alternate infinite;
+    height: 25px;
+
+}
+.imgs5 .img2{
+    position: relative;
+    top: 9px;
+    animation: mouse 2s alternate infinite;
+    height: 15px;
+}
+
+
+
+} 
