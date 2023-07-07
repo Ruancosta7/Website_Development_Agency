@@ -64,17 +64,32 @@ let main = document.querySelector('main .h1')
         }, 100*i)
     })
 }
-let main2 = document.querySelector('main .h2')
-function writer2(elemento2){
-    const mainArray2 = main2.textContent.split('');
-    main2.textContent= ""
-    mainArray2.forEach((letra, i)=>{
-        setTimeout(function(){
-            elemento2.textContent += letra
-        }, 300*i)
+
+writer(main)
+
+//animação ao scrollar a página
+
+const target = document.querySelectorAll('[data-anime]')
+const animateClass = 'animate';
+
+
+function animateScroll(){
+    const windowTop = window.pageYOffset + (window.innerHeight * 0.65)
+    target.forEach((element)=>{
+        if(windowTop > element.offsetTop){
+            element.classList.add(animateClass);
+        }
+        else if(windowTop < element.offsetTop){
+            element.classList.remove(animateClass);
+        }
     })
 }
-writer(main)
-writer2(main2)
+
+animateScroll();
+
+if(target.length){
+window.addEventListener('scroll', function(){
+    animateScroll();
+})}
 
 
