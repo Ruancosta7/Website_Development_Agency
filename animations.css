@@ -24,6 +24,21 @@ footer a:active{
     transition: 100ms;
     filter: brightness(.8);
 }
+[data-anime="grow"]{
+    transform: scale(.5);
+    transition: .5s;
+}
+
+[data-anime]{
+    opacity: 0;
+}
+
+[data-anime].animate{
+    transform: scale(1);
+    opacity:1;
+}
+
+
 @media(min-width:1024px){
 
 
